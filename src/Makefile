@@ -9,7 +9,17 @@ EXE = ../area/rom
 PROF = -O -g3
 
 C_FLAGS = $(PROF) -Wall
-L_FLAGS = $(PROF) -lcrypt
+L_FLAGS = $(PROF)
+
+# For Linux we want to add -lcrypt, but not for OSX (Darwin)
+# Note - This likely does not work on Windows (no uname)
+# To Guard for Windows see this:
+# https://stackoverflow.com/questions/714100/os-detecting-makefile
+#
+UNAME_S := $(shell uname -s)
+ifeq ($(UNAME_S),Linux)
+    L_FLAGS += -lcrypt
+endif
 
 #IMC2 - Comment out to disable IMC2 support
 IMC = 1
