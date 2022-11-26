@@ -357,6 +357,9 @@ int mud_ansiprompt, mud_ansicolor, mud_telnetga;
 /* paranoid types who don't want the 'net at large peeking at their MUD)      */
 char *mud_ipaddress = "0.0.0.0";
 
+/* When compiling as a library - we don't want a main method. Instead we'll   */
+/* create a new method.                                                       */
+#ifndef AS_LIB
 int main (int argc, char **argv)
 {
     struct timeval now_time;
@@ -470,7 +473,53 @@ int main (int argc, char **argv)
     exit (0);
     return 0;
 }
+#endif
 
+#ifdef AS_LIB
+/* There's a lot of things we're not going to do if we don't have to... */
+/* Notable things missing: fCopyOver, IMC, All non Unix stuff           */
+int do_main(int port) {
+    struct timeval now_time;
+    bool fCopyOver = FALSE;
+
+    /*
+     * Init time.
+     */
+    gettimeofday (&now_time, NULL);
+    current_time = (time_t) now_time.tv_sec;
+    strcpy (str_boot_time, ctime (&current_time));
+
+    /*
+     * Reserve one channel for our use.
+     */
+    if ((fpReserve = fopen (NULL_FILE, "r")) == NULL)
+    {
+        perror (NULL_FILE);
+        return 1;
+    }
+
+    /* validate port */
+     if(port < 1024 || port > 65535)
+     {
+        fprintf (stderr, "Port number must be above 1024 and less than 65535.\n");
+        return 1;
+     }
+
+    qmconfig_read(); /* Here so we can set the IP adress. -- JR 05/06/01 */
+    control = init_socket (port);
+
+    boot_db ();
+    log_f ("ROM is ready to rock on port %d (%s).", port, mud_ipaddress);
+
+    game_loop_unix(control);
+    close(control);
+
+    log_string ("Normal termination of game.");
+
+    /* We don't want to exit() when run as a lib */
+    return 0;
+}
+#endif
 
 
 #if defined(unix)
@@ -851,7 +900,7 @@ void game_loop_unix (int control)
         }
 
 
-#ifdef IMC
+#if defined(IMC) && !defined(AS_LIB)
 	imc_loop();
 #endif
 

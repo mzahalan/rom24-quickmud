@@ -6,6 +6,7 @@
 CC = gcc
 RM = rm
 EXE = ../area/rom
+LIB = ../area/libmud.a
 PROF = -O -g3
 
 C_FLAGS = $(PROF) -Wall
@@ -28,9 +29,15 @@ OBJ_FILES := $(patsubst %.c,$(OBJ_DIR)/%.o,$(SRC_FILES))
 # Make the Object directory if it doesn't exist
 $(shell   mkdir -p $(OBJ_DIR))
 
-rom: $(OBJ_FILES)
+rom: clean $(OBJ_FILES)
 	$(RM) -f $(EXE)
 	$(CC) -o $(EXE) $(OBJ_FILES) $(L_FLAGS)
+
+
+lib: C_FLAGS := $(C_FLAGS) -DAS_LIB
+lib: clean $(OBJ_FILES)
+	$(RM) -f $(LIB)
+	ar rcs $(LIB) $(OBJ_FILES)
 
 $(OBJ_DIR)/%.o: %.c
 	$(CC) $(C_FLAGS) -c -o $@ $<
