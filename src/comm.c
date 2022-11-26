@@ -480,8 +480,7 @@ int main (int argc, char **argv)
 /* Notable things missing: fCopyOver, IMC, All non Unix stuff           */
 int do_main(int port) {
     struct timeval now_time;
-    bool fCopyOver = FALSE;
-
+    
     /*
      * Init time.
      */
