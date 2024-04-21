@@ -75,7 +75,7 @@ extern AFFECT_DATA *affect_free;
  * Globals.
  */
 HELP_DATA *help_first;
-HELP_DATA *help_last;
+extern HELP_DATA *help_last;
 
 HELP_AREA *had_list;
 
