@@ -69,3 +69,12 @@ This is the 2.1 production release of Merc.
 -----
 
 See other READMEs in the repo for full info and licenses.
+
+
+-----
+
+Added mud.service for systemd supported Unix systems (like Ubuntu). 
+- Move this file into /etc/systemd/system.
+- Run ```systemctl start mud```
+- Run ```systemctl enable mud```
+And that's it.

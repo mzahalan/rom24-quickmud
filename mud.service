@@ -1,0 +1,17 @@
+[Unit]
+Description=The Mud
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=<user>
+ExecStart=<PATH TO MUD> <PORT>
+WorkingDirectory=<PATH TO MUD (Area Directory)
+
+
+[Install]
+WantedBy=multi-user.target
+
