@@ -34,7 +34,9 @@
 #include <stdio.h>
 #include <string.h>
 #include <time.h>
+#if !defined(__APPLE__)
 #include <malloc.h>
+#endif
 #include "merc.h"
 #include "recycle.h"
 #include "tables.h"

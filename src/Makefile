@@ -9,8 +9,17 @@ EXE = ../area/rom
 LIB = ../area/libmud.a
 PROF = -O -g3
 
+OS_TYPE := $(shell uname)
+
+
 C_FLAGS = $(PROF) -Wall
+
+# Macos doesn't use the crypt library, instead it defines crypt in unistd.h
+ifeq ($(OS_TYPE),Darwin)
+L_FLAGS = $(PROF)
+else
 L_FLAGS = $(PROF) -lcrypt
+endif
 
 #IMC2 - Comment out to disable IMC2 support
 IMC = 1

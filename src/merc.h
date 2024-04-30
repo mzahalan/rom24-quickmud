@@ -42,6 +42,11 @@
 #define DECLARE_SPELL_FUN( fun )    SPELL_FUN fun
 #endif
 
+#if defined(__APPLE__)
+#define linux 1
+#define unix 1
+#endif
+
 /* system calls */
 int unlink();
 int system();
