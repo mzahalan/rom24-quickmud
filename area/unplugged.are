@@ -1,0 +1,661 @@
+#AREA	
+unplugged.are~
+Unplugged~
+{0 99} MDZ    Unplug and Gear Up~
+2400 2499
+
+#HELPS
+0 $~
+
+#SOCIALS
+#0
+
+#MOBILES
+#0
+
+#OBJECTS
+#2400
+locker~
+Weapons Locker~
+A Weapons Locker Stretches the length of the West Wall~
+~
+container O 0
+10000 0 0 1000 100
+0 0 0 P
+#2401
+hold~
+Gear Hold~
+A Gear Hold full of Armor is on the East Wall~
+~
+container O 0
+10000 0 0 1000 100
+0 0 0 P
+#2402
+chest~
+Treasure Chest~
+A Treasure Chest full of rare items is in the South West Corner~
+~
+container O 0
+10000 0 0 1000 100
+0 0 0 P
+
+#2410
+sword~
+A Sword from another world~
+You see a sword from another world.~
+electrum~
+weapon ABC AN
+sword 10 6 slash ACDE
+1 1 1 P
+A
+18 10
+A
+19 10
+A
+12 50
+A
+13 50
+A
+14 50
+E
+sword~
+This sword is no joke.
+~
+#2411
+dagger~
+A Dagger from another world~
+You see a dagger from another world.~
+electrum~
+weapon ABC AN
+dagger 10 6 pierce ACDE
+1 1 1 P
+A
+18 10
+A
+19 10
+A
+12 50
+A
+13 50
+A
+14 50
+E
+dagger~
+This dagger is no joke.
+~
+#2420
+pants~
+A nice pair of khaki pants~
+You see a pair of khaki pants with cargo pockets.~
+cloth~
+armor ABC AF
+1 1 1 0 0
+0 1 1 P
+A
+12 50
+A
+13 50
+A
+14 50
+A
+20 -20
+A
+21 -20
+A
+22 -20
+A
+23 -20
+A
+24 -20
+A
+17 -20
+A
+1 1
+A
+2 1
+A
+3 1
+A
+4 1
+A
+5 1
+E
+pants~
+These pants look like something a badass would wear.
+~
+#2421
+ring~
+a ring~
+You see a ring.~
+leather~
+armor C AB
+1 1 1 0 0
+0 1 1 P
+A
+12 50
+A
+13 50
+A
+14 50
+A
+20 -20
+A
+21 -20
+A
+22 -20
+A
+23 -20
+A
+24 -20
+A
+17 -20
+A
+1 1
+A
+2 1
+A
+3 1
+A
+4 1
+A
+5 1
+E
+ring~
+a ring
+~
+#2422
+chain~
+a chain~
+You see a chain.~
+leather~
+armor C AC
+1 1 1 0 0
+0 1 1 P
+A
+12 50
+A
+13 50
+A
+14 50
+A
+20 -20
+A
+21 -20
+A
+22 -20
+A
+23 -20
+A
+24 -20
+A
+17 -20
+A
+1 1
+A
+2 1
+A
+3 1
+A
+4 1
+A
+5 1
+E
+chain~
+a chain
+~
+#2423
+vest~
+a vest~
+You see a vest.~
+leather~
+armor C AD
+1 1 1 0 0
+0 1 1 P
+A
+12 50
+A
+13 50
+A
+14 50
+A
+20 -20
+A
+21 -20
+A
+22 -20
+A
+23 -20
+A
+24 -20
+A
+17 -20
+A
+1 1
+A
+2 1
+A
+3 1
+A
+4 1
+A
+5 1
+E
+vest~
+a vest
+~
+#2424
+shades~
+a pair of shades~
+You see a pair of shades.~
+leather~
+armor C AE
+1 1 1 0 0
+0 1 1 P
+A
+12 50
+A
+13 50
+A
+14 50
+A
+20 -20
+A
+21 -20
+A
+22 -20
+A
+23 -20
+A
+24 -20
+A
+17 -20
+A
+1 1
+A
+2 1
+A
+3 1
+A
+4 1
+A
+5 1
+E
+shades~
+shades
+~
+#2425
+boots~
+a pair of tactical combat boots~
+You see a pair of boots.~
+leather~
+armor C AG
+1 1 1 0 0
+0 1 1 P
+A 12 50
+A 13 50
+A 14 50
+A 20 -20
+A 21 -20
+A 22 -20
+A 23 -20
+A 24 -20
+A 17 -20
+A 1 1
+A 2 1
+A 3 1
+A 4 1
+A 5 1
+F A 2 3 VT
+E
+boots~
+boots
+~
+#2426
+gloves~
+gloves~
+You see a pair of gloves.~
+leather~
+armor C AH
+1 1 1 0 0
+0 1 1 P
+A
+12 50
+A
+13 50
+A
+14 50
+A
+20 -20
+A
+21 -20
+A
+22 -20
+A
+23 -20
+A
+24 -20
+A
+17 -20
+A
+1 1
+A
+2 1
+A
+3 1
+A
+4 1
+A
+5 1
+E
+gloves~
+gloves
+~
+#2427
+sleeves~
+sleeves~
+You see a pair of sleeves.~
+leather~
+armor C AI
+1 1 1 0 0
+0 1 1 P
+A
+12 50
+A
+13 50
+A
+14 50
+A
+20 -20
+A
+21 -20
+A
+22 -20
+A
+23 -20
+A
+24 -20
+A
+17 -20
+A
+1 1
+A
+2 1
+A
+3 1
+A
+4 1
+A
+5 1
+E
+sleeves~
+sleeves
+~
+#2428
+shield~
+shield~
+You see a shield.~
+leather~
+armor C AJ
+1 1 1 0 0
+0 1 1 P
+A
+12 50
+A
+13 50
+A
+14 50
+A
+20 -20
+A
+21 -20
+A
+22 -20
+A
+23 -20
+A
+24 -20
+A
+17 -20
+A
+1 1
+A
+2 1
+A
+3 1
+A
+4 1
+A
+5 1
+E
+shield~
+shield
+~
+#2429
+cape~
+cape~
+You see a cape.~
+leather~
+armor C AK
+1 1 1 0 0
+0 1 1 P
+A
+12 50
+A
+13 50
+A
+14 50
+A
+20 -20
+A
+21 -20
+A
+22 -20
+A
+23 -20
+A
+24 -20
+A
+17 -20
+A
+1 1
+A
+2 1
+A
+3 1
+A
+4 1
+A
+5 1
+E
+cape~
+cape
+~
+#2430
+belt~
+A Black Leather Belt~
+You see Black Leather Belt.~
+leather~
+armor C AL
+1 1 1 0 0
+0 1 1 P
+A
+12 50
+A
+13 50
+A
+14 50
+A
+20 -20
+A
+21 -20
+A
+22 -20
+A
+23 -20
+A
+24 -20
+A
+17 -20
+A
+1 1
+A
+2 1
+A
+3 1
+A
+4 1
+A
+5 1
+E
+belt~
+belt
+~
+#2431
+bracer~
+A Black Leather Bracer~
+You see Black Leather Bracer.~
+leather~
+armor C AM
+1 1 1 0 0
+0 1 1 P
+A
+12 50
+A
+13 50
+A
+14 50
+A
+20 -20
+A
+21 -20
+A
+22 -20
+A
+23 -20
+A
+24 -20
+A
+17 -20
+A
+1 1
+A
+2 1
+A
+3 1
+A
+4 1
+A
+5 1
+E
+Bracer~
+Bracer
+~
+#2432
+stone~
+A Shimering Floating Stone~
+You see a Shimering Floating Stone.~
+etherealness~
+armor C AQ
+1 1 1 0 0
+0 1 1 P
+A
+12 50
+A
+13 50
+A
+14 50
+A
+20 -20
+A
+21 -20
+A
+22 -20
+A
+23 -20
+A
+24 -20
+A
+17 -20
+A
+1 1
+A
+2 1
+A
+3 1
+A
+4 1
+A
+5 1
+E
+Stone~
+This stone looks like something a badass would have floating next to them.
+~
+#0
+
+#ROOMS
+#2400
+Entry Way~
+You appear to have transfered to a different dimension.
+You are out of the game, as it were. In this area you can, if 
+you choose, equip yourself with some of the most exception items
+found in this world. Items you grab will go with you when you
+re-enter the world you came from through the portal to the west.
+ 
+There are stairs leading down to the armory. 
+~
+0 DK 0
+H 400 M 400
+D3
+Jump back into the game.
+~
+~
+0 -1 3700
+D5
+Stairs leading down to the armory
+~
+~
+0 -1 2401
+S
+#2401
+Armory~
+Welcome to the armory. Here you will find weapons, armor,
+and useful items. Note these are extremely powerful tools
+some would argue they may destroy balance in the world you
+came from.
+~
+0 DK 0
+D4
+Stairs up to the Entry Way
+~
+~
+0 -1 2400
+S
+#0
+
+#RESETS
+O 0 2400   1 2401 * The Weapons Locker
+O 0 2401   1 2401 * The Gear Hold
+O 0 2402   1 2401 * A Fancy Chest
+P 1 2410   -1 2400 1 * A Sword
+P 1 2420   -1 2401 1 * Armor
+P 1 2421   -1 2401 2 * Armor
+P 1 2422   -1 2401 2 * Armor
+P 1 2423   -1 2401 1 * Armor
+P 1 2424   -1 2401 1 * Armor
+P 1 2425   -1 2401 1 * Armor
+P 1 2426   -1 2401 1 * Armor
+P 1 2427   -1 2401 1 * Armor
+P 1 2428   -1 2401 1 * Armor
+P 1 2429   -1 2401 1 * Armor
+P 1 2430   -1 2401 1 * Armor
+P 1 2431   -1 2401 2 * Armor
+P 1 2432   -1 2401 1 * Armor
+S
+
+#SHOPS
+0
+
+#SPECIALS
+S
+
+#$
