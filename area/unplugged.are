@@ -17,19 +17,43 @@ Unplugged~
 #2400
 locker~
 Weapons Locker~
-A Weapons Locker Stretches the length of the West Wall~
+A large weapons locker lines the wall to your left~
 ~
 container O 0
 10000 0 0 1000 100
 0 0 0 P
+E
+Weapons Locker~
+The reinforced steel locker hangs open, casting a long, 
+imposing shadow across the grimy floor. Its surface is 
+a tapestry of nicks and scratches, whispering tales of 
+past battles. Even without a lock, a holographic keypad 
+flickers at eye level, its faint red glow seemingly 
+taunting you with the advanced security protocols likely 
+bypassed. Vents on the locker's base hum with a low thrum, 
+hinting at the advanced climate control system keeping its 
+precious cargo in pristine condition. A metallic tang hangs 
+in the air, a subtle but undeniable reminder of the high-tech 
+weaponry likely secured within.~
 #2401
-hold~
-Gear Hold~
-A Gear Hold full of Armor is on the East Wall~
+container~
+military surplus container~
+A military surplus container sits unobtrusively against the rear wall.~
 ~
 container O 0
 10000 0 0 1000 100
 0 0 0 P
+E
+military surplus container~
+A weathered military surplus container squats in the corner, 
+its olive drab paint marred with scuffs and faded stenciled 
+warnings. Heavy-duty latches gleam dully, their worn handles 
+hinting at countless deployments. A single, red biohazard symbol 
+stands out starkly against the faded paint, a chilling reminder 
+of the battles this container might have witnessed. Despite the 
+battered exterior, a low hum emanates from hidden vents, 
+promising a climate-controlled haven for the precious cargo 
+within – a treasure trove of high-end armor.~
 #2402
 chest~
 Treasure Chest~
@@ -41,7 +65,7 @@ container O 0
 
 #2410
 sword~
-A Sword from another world~
+The Unmarked Sword~
 You see a sword from another world.~
 electrum~
 weapon ABC AN
@@ -59,11 +83,24 @@ A
 14 50
 E
 sword~
-This sword is no joke.
+The hilt, nestled in crimson velvet, is ornately carved, but the 
+true marvel lies in the blade itself. It catches the light 
+differently, a luminescence that seems to emanate from within the 
+metal rather than reflect from it. Is it even metal? The surface 
+is flawless, impossibly smooth – no forge marks, no scratches, not 
+even a trace of dust mars its perfection. The edge, impossibly thin, 
+seems to shimmer with a faint energy, like a heat haze dancing on 
+a summer's day. It's as if this blade were carved from moonlight 
+itself.  The weight, or lack thereof, throws me off. It feels lighter
+than it should, almost weightless, yet you can't shake the feeling of
+immense power radiating from it. This is no ordinary weapon. 
+This… this is a visitor from another world. A blade crafted with an 
+alien technology, promising unimaginable cutting power and a beauty 
+that you me speechless..
 ~
 #2411
 dagger~
-A Dagger from another world~
+The Unmarked Dagger~
 You see a dagger from another world.~
 electrum~
 weapon ABC AN
@@ -81,11 +118,24 @@ A
 14 50
 E
 dagger~
-This dagger is no joke.
+It rests nestled in a simple leather sheath, the worn material 
+whispering of past adventures. But it's the dagger itself that 
+truly steals your breath. Unlike any earthly metal, the blade 
+catches the light with an unnatural sheen, almost as if it were 
+carved from starlight itself. Its surface is flawless, impossibly 
+smooth – devoid of forge marks, scratches, or even the faintest 
+fingerprint. The edge, impossibly thin, shimmers with a barely 
+perceptible energy, a promise of lethal precision that transcends 
+this world. You tentatively reach out, surprised by the 
+near-weightlessness of the weapon. Yet, despite its feather-light 
+feel, an aura of raw power emanates from the dagger, sending a jolt
+up your arm. This is no mere blade; it's a whisper of something 
+alien, a weapon crafted with an unknown technology that speaks of 
+unimaginable sharpness and a beauty that defies explanation.
 ~
 #2420
 pants~
-A nice pair of khaki pants~
+Durable Field Khakis~
 You see a pair of khaki pants with cargo pockets.~
 cloth~
 armor ABC AF
@@ -121,7 +171,16 @@ A
 5 1
 E
 pants~
-These pants look like something a badass would wear.
+A pair of rugged tactical khakis hangs limply, their utilitarian 
+design evident in every stitch. They're crafted from a tough, 
+mud-repellent fabric that promises to shrug off the worst splashes 
+and splatters. Cargo pockets with reinforced stitching bulge 
+slightly, hinting at the tools or gear they might hold. Belt loops
+are wide and reinforced, ready to accommodate a sturdy duty belt. 
+Knees boast integrated pockets, perfect for slipping in knee pad 
+inserts for added protection during tactical maneuvers. Despite 
+their ruggedness, these khakis retain a hint of professionalism 
+with a clean, tailored fit.
 ~
 #2421
 ring~
@@ -618,10 +677,19 @@ Stairs leading down to the armory
 S
 #2401
 Armory~
-Welcome to the armory. Here you will find weapons, armor,
-and useful items. Note these are extremely powerful tools
-some would argue they may destroy balance in the world you
-came from.
+A low hum thrums beneath your feet as you descend the metal stairs. 
+Reaching the bottom, you step into a dimly lit chamber. The air 
+hangs cool and sterile, carrying the faint metallic tang of recycled 
+air. Floor panels of a dark, reflective material stretch out before 
+you, their seamless surface interrupted only by a series of glowing 
+access panels embedded within. The walls, clad in matte black nano-ceramic, 
+are devoid of decoration, save for a single holographic display flickering 
+to life at your approach. It depicts a detailed 3D rendering of various 
+weapons and armor, their sleek lines and glowing accents hinting at 
+advanced technology. Empty weapon racks, their chrome surfaces catching 
+the faint red glow of emergency lighting, line the far wall. This is no 
+archaic armory; it's a hi-tech arsenal, waiting to be readied for the 
+next skirmish.
 ~
 0 DK 0
 D4
@@ -637,6 +705,7 @@ O 0 2400   1 2401 * The Weapons Locker
 O 0 2401   1 2401 * The Gear Hold
 O 0 2402   1 2401 * A Fancy Chest
 P 1 2410   -1 2400 1 * A Sword
+P 1 2411   -1 2400 1 * A Dagger
 P 1 2420   -1 2401 1 * Armor
 P 1 2421   -1 2401 2 * Armor
 P 1 2422   -1 2401 2 * Armor
