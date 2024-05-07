@@ -15,7 +15,6 @@ jobs:
       uses: appleboy/ssh-action@v1.0.3
       with:
         host: ${{ secrets.SSH_HOST }}
-        port: ${{ secrets.SSH_PORT }}
         username: ${{ secrets.SSH_USER }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         script: |
@@ -23,6 +22,6 @@ jobs:
           git pull
           cd src
           make
-          sudo systemctl stop mud
-          cp ../area/* ../../live/area/
-          sudo systemctl start mud
+          pm2 stop mud
+          cp ../area/* ${{ secrets.LIVE_DIR }}/area/
+          pm2 start mud
